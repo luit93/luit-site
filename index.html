@@ -5,160 +5,243 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <!-- font awesome  -->
     <link
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
       crossorigin="anonymous"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <main class="wrapper">
-      <!-- hero section -->
-      <div class="hero">
-        <nav class="container">
-          <a href="/"> <img src="" alt="" /></a>
-          <div class="menu">
-            <ul>
-              <li><a href="">About</a></li>
-              <li><a href="">Skills</a></li>
-              <li><a href="">Projects</a></li>
-              <li><a href="">Contact</a></li>
-            </ul>
-          </div>
-        </nav>
-        <div class="hero-content container">
-          <div class="info">
-            <h1>hi this is luit</h1>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi,
-              ducimus nihil repellat perspiciatis molestiae repudiandae! Nulla,
-              harum assumenda illo sint pariatur laudantium cupiditate provident
-              sequi?
-            </p>
-          </div>
-          <div class="profile-img">
-            <img
-              src="img/luit_saikia-removebg-preview.png"
-              width="100%"
-              alt="Luit's image"
-            />
+      <!-- hero header -->
+      <section  id="header" class="header">
+        <div class="top-menu">
+          <nav class="navbar navbar-expand-md">
+            <div class="container">
+              <a class="navbar-brand" href="#"
+                ><img src="img/download.png" width="120px" alt=""
+              /></a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <!-- <span class="navbar-toggler-icon"></span> -->
+                <i class="fas fa-bars"></i>
+              </button>
+              <div
+                class="collapse navbar-collapse justify-content-end"
+                id="navbarNav"
+              >
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"
+                      >About</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div class="summary container">
+          <div class="row py-5">
+            <div class="col-md-6 order-md-2">
+              <img
+                src="img/luit_saikia-removebg-preview.png"
+                alt="luit photo"
+              />
+            </div>
+            <div class="col-md-6 order-md-1 pt-5">
+              <div class="info mt-6">
+                <h1>Luit</h1>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Architecto, recusandae animi.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
+        <!-- <div class="container">
+          <div class="row mt-5">
+            <div class="col-md-6 order-md-1 pt-5">
+              <h1>Hi, i'm Luit</h1>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum,
+                ipsum consequatur.
+              </p>
+            </div>
+            <div class="col-md-6 order-md-2">
+              <img src="img/luit_saikia-removebg-preview.png" alt="" />
+            </div>
+          </div>
+        </div> -->
+      </section>
       <!-- skills section -->
-      <section class="skills">
-        <div class="section-title">Skills</div>
-        <div class="skills-list container">
-          <div class="html">
-            <i class="fab fa-html5" style="color: orange"></i>HTML
-          </div>
-          <div class="js">
-            <i class="fab fa-js-square" style="color: blue"></i>javaScript
-          </div>
-          <div class="react">
-            <i class="fab fa-react" style="color: yellow"></i>React
-          </div>
-          <div class="node">
-            <i class="fab fa-node" style="color: blue"></i>Node
-          </div>
-          <div class="mongo">
-            <i class="fas fa-database" style="color: green"></i>Mongo
-          </div>
-        </div>
-      </section>
-      <!-- projects sectiion -->
-      <section class="projects">
-        <div class="section-title">Projects</div>
-        <div class="projects-list container">
-          <div class="pro-task-list">
-            <div class="pro-img">
-              <img src="img/not-to-do.jpeg" alt="" />
-            </div>
-            <div class="info">
-              <div class="info-title">Not to Do Task List</div>
-              <div class="tech">Tech: HTML, CSS, JavaScript</div>
-              <div class="links">
-                <a href="">
-                  <i class="fab fa-github-alt"></i>
-                </a>
-                <a href="">
-                  <i class="fab fa-chrome"></i>
-                </a>
-              </div>
-              <p>
-                <strong>About:</strong> Lorem ipsum dolor sit amet, consectetur
-                adipisicing elit. Doloremque veritatis fuga iure assumenda atque
-                vitae culpa magni id repudiandae maxime illo, facilis amet
-                architecto minus neque repellat perferendis natus saepe, nostrum
-                quas sint!
-              </p>
-            </div>
-          </div>
-          <div class="pro-task-list">
-            <div class="info">
-              <div class="info-title">Prank Calculator</div>
-              <div class="tech">Tech: HTML, CSS, JavaScript</div>
-              <div class="links">
-                <a href="">
-                  <i class="fab fa-github-alt"></i>
-                </a>
-                <a href="">
-                  <i class="fab fa-chrome"></i>
-                </a>
-              </div>
-              <p>
-                <strong>About:</strong> Lorem ipsum dolor sit amet, consectetur
-                adipisicing elit. Doloremque veritatis fuga iure assumenda atque
-                vitae culpa magni id repudiandae maxime illo, facilis amet
-                architecto minus neque repellat perferendis natus saepe, nostrum
-                quas sint!
-              </p>
-            </div>
-            <div class="pro-img">
-              <img src="img/cal.png" alt="" />
+      <section id="skills" class="skills bg-info py-5">
+        <div class="container">
+          <div class="section-title fs-3 fw-bold text-center">Skills</div>
+          <div
+            class="
+              skills-list
+              fs-3
+              d-flex
+              justify-content-between
+              flex-wrap
+              mt-4
+            "
+          >
+            <div><i class="fab fa-html5 text-primary"></i> HTML</div>
+            <div><i class="fab fa-css3-alt text-danger"></i> CSS</div>
+            <div><i class="fab fa-js-square text-warning"></i>javaScript</div>
+            <div><i class="fab fa-react text-info"></i>React</div>
+            <div><i class="fab fa-node text-success"></i>Node</div>
+            <div>
+              <div><i class="fab fa-react text-info"></i>React</div>
+              <i class="fas fa-database text-success"></i>MongoDB
             </div>
           </div>
         </div>
       </section>
+      <!-- pojects -->
+      <section id="projects" class="projects">
+        <div class="section-title fs-3 fw-bold text-center">Projects</div>
+        <div class="projects-list container mt-1">
+        <div class="row">
+        <div class="col-md-6 mt-5">
+            
+                <img src="img/not-to-do.jpeg" width="100%" alt="not to do tasks list">
+            
+
+
+            
+        </div>
+        <div class="col-md-6 mt-5">
+            <div class="fs-2 fw-bold">
+                Not TO DO Task List |
+                <a href="" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="" target="_blank"><i class="fab fa-chrome"></i></a>
+            </div>
+            <div class="fst-italic">Tech: HTML, CSS, JS</div>
+            <p class="mt-3">
+                <strong>About:</strong>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, alias velit.
+            </p>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 mt-5">
+            
+                <img src="" width="100%" alt="not to do tasks list">
+            
+
+
+            
+        </div>
+        <div class="col-md-6 mt-5">
+            <div class="fs-2 fw-bold">
+                Portfolio |
+                <a href="" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="" target="_blank"><i class="fab fa-chrome"></i></a>
+            </div>
+            <div class="fst-italic">Tech: HTML, CSS, JS</div>
+            <p class="mt-3">
+                <strong>About:</strong>strong>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, alias velit.
+            </p>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 mt-5">
+            
+                <img src="img/cal.png" width="100%" alt="not to do tasks list">
+            
+
+
+            
+        </div>
+        <div class="col-md-6 mt-5">
+            <div class="fs-2 fw-bold">
+                Prank Calculator |
+                <a href="" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="" target="_blank"><i class="fab fa-chrome"></i></a>
+            </div>
+            <div class="fst-italic">Tech: HTML, CSS, JS</div>
+            <p class="mt-3">
+                <strong>About:</strong>strong>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, alias velit.
+            </p>
+
+        </div>
+    </div>
+      </section>
+
       <!-- about -->
-      <section class="about">
-          <div class="section-title">About Me</div>
-          <div class="about-content">
-            <div class="my-img">
-                <img src="img/luit_saikia-removebg-preview.png" alt="" />
-                <div class="links">
-                    <a href="">
-                      <i class="fab fa-github-alt"></i>
-                    </a>
-                    <a href="">
-                      <i class="fab fa-chrome"></i>
-                    </a>
+      <section id="about" class="about">
+          <div class="container">
+              <div class="section-title fs-3 fw-bold">About Me</div>
+            <div class="row py-5">
+                <div class="col-md-6">
+                  <img
+                    src="img/luit_saikia-removebg-preview.png"
+                     class="img-thumbnail" alt="luit photo"
+                  />
+                </div>
+                <div class="col-md-6 order-md-1 pt-5">
+                  <div class="info mt-6">
+                    <h1>Luit</h1>
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Architecto, recusandae animi.
+                    </p>
                   </div>
-            </div>
-            
-            <div class="info">
-              
-              <p>
-                <strong>About:</strong> Lorem ipsum dolor sit amet, consectetur
-                adipisicing elit. Doloremque veritatis fuga iure assumenda atque
-                vitae culpa magni id repudiandae maxime illo, facilis amet
-                architecto minus neque repellat perferendis natus saepe, nostrum
-                quas sint!
-              </p>
-            </div>
-            
-            
-            </div>
-          </section>
-          <footer class="footer">
-              Copy &copy all rights Lorem ipsum dolor sit.
-          </footer>
+                </div>
+              </div>
+          </div>
+
+      </section>
+
+      <!-- footer -->
+      <footer class="footer text-center py-5 mt-5 bg-dark text-light">
+        copy &copy; all rights reserved
+      </footer>
+      <a href="#header">
+      <div id="go-up">
+        <i class="fas fa-sort-up"></i>
       </div>
+    </a>
     </main>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
